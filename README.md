@@ -37,7 +37,7 @@ Bidirectional QR code tool:
 
 **Usage:**
 ```bash
-clipqr
+clipqr.py
 ```
 
 **What it does:**
