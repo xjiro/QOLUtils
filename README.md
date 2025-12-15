@@ -2,9 +2,7 @@
 
 A collection of quality-of-life utilities for common media manipulation tasks.
 
-## Tools
-
-### autocrop
+## autocrop
 
 Automatically trims and crops letterboxing or empty space from images and videos.
 
@@ -28,7 +26,7 @@ autocrop.py video.mp4
 - **For videos:** Uses ffmpeg's cropdetect filter to find and remove letterboxing/pillarboxing
 
 
-### clipqr
+## clipqr
 
 Bidirectional QR code tool:
 - If your clipboard has text, put a QR code image of it in your clipboard.
