@@ -27,9 +27,23 @@ autocrop.py video.mp4
 - **For images:** Detects the most common edge color and crops it away
 - **For videos:** Uses ffmpeg's cropdetect filter to find and remove letterboxing/pillarboxing
 
-**Requirements:**
-- `pillow`
-- `ffmpeg` (must be in PATH for video processing)
+
+### clipqr
+
+Bidirectional QR code tool:
+- If your clipboard has text, put a QR code image of it in your clipboard.
+- If your clipboard has an image, try to read it as a barcode/QR code and put the text in your clipboard.
+
+
+**Usage:**
+```bash
+clipqr
+```
+
+**What it does:**
+- **Text in clipboard:** Generates a QR code image and puts it in the clipboard
+- **Image in clipboard:** Reads any QR codes or barcodes in the image and puts the decoded text in the clipboard
+
 
 ## Installation
 
@@ -41,6 +55,8 @@ cd QOLUtils
 # Install Python dependencies
 pip install -Ur requirements.txt
 ```
+
+Link or put the `.py` files in your system PATH
 
 For video cropping, install ffmpeg:
 - Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH
