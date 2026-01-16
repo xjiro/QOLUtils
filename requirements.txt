@@ -2,3 +2,6 @@ copykitten
 pillow
 qrcode
 qreader
+passlib
+bcrypt
+cryptography

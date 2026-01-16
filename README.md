@@ -1,6 +1,6 @@
 # QOLUtils
 
-A collection of quality-of-life utilities for common media manipulation tasks.
+A collection of quality-of-life utilities for common tasks.
 
 ## autocrop
 
@@ -41,6 +41,47 @@ clipqr.py
 **What it does:**
 - **Text in clipboard:** Generates a QR code image and puts it in the clipboard
 - **Image in clipboard:** Reads any QR codes or barcodes in the image and puts the decoded text in the clipboard
+
+
+## filelist
+
+Cross-platform utility for comparing directory contents. Makes a script to zip differences between two directories for combining. 
+
+**Usage:**
+```bash
+python filelist.py
+```
+
+**Features:**
+1. **Dump Directory to JSON** - Scans a directory and makes a metadata file to compare.
+
+2. **Compare File Lists** - Compare two generated metadata files. Shows:
+   - Files present in both lists
+   - Files unique to A
+   - Files unique to B
+   - Total counts and sizes for each category
+
+   Also generates a a script (`zip_different_files.py`) to create a zip in either directory of only the mutually exclusive contents.
+
+
+## passwdhash
+
+Generate password hashes in multiple formats for manual use.
+
+**Usage:**
+```bash
+python passwdhash.py
+```
+
+**What it does:**
+- Prompts for username and password
+- Generates three different hash formats:
+  - **bcrypt** - Modern password hashing standard (default parameters)
+  - **.htpasswd** - bcrypt hash formatted for Apache .htpasswd files (12 rounds)
+  - **passlib pbkdf2_sha256** - PBKDF2-SHA256 hash for Python applications
+  - **SHA3-256** - hashlib's SHA-3 256-bit hash in hex
+- Generates random keys for:
+  - **Fernet**
 
 
 ## Installation
