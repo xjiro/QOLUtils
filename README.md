@@ -88,7 +88,7 @@ python passwdhash.py
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone git@github.com:xjiro/QOLUtils.git
 cd QOLUtils
 
 # Install Python dependencies
